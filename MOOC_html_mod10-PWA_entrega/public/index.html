@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shooter Game</title>
+    <link rel="manifest" href="manifest.json">
+    <link type="text/css" rel="stylesheet" href="game.css">
+    <meta name="description" content="Juego de disparos 2d">
+    <meta name="theme-color" content="#ee3ebd">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="shooter game">
+
+
+    <script src="Game.js" type="text/javascript"></script>
+    <script src="Entity.js" type="text/javascript"></script>
+    <script src="Character.js" type="text/javascript"></script>
+    <script src="Player.js" type="text/javascript"></script>
+    <script src="Opponent.js" type="text/javascript"></script>
+    <script src="Shot.js" type="text/javascript"></script>
+    <script src="main.js" type="text/javascript"></script>
+    <script src="Boss.js " type="text/javascript"></script>
+
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/90acb4e386.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+    <div class="buttons">
+        <button id="reset" class="gamebutton" onclick="this.blur();">Nueva partida</button>
+        <button id="pause" class="gamebutton" onclick="this.blur();">Pausa</button>
+    </div>
+    <button id="butInstall" aria-label="Install" hidden>INSTALAR</button>
+    <h1>Hola</h1>
+
+    <header class="ui">
+        <div class="lifes">
+            <span id="livesli" class="livesli"></span>
+            <i class="fas fa-heart life"></i>
+        </div>
+        <div class="score">
+            <span id="scoreli" class="scoreli"></span>
+            <i class="icon fas fa-star fa-spin"></i>
+        </div>
+    </header>
+
+
+    <script type="text/javascript">
+        const mostrar_vidas = () => {
+            document.getElementById("livesli").innerHTML = "Lives " + game.lives;
+        }
+
+        const mostrar_puntuacion = () => {
+            document.getElementById("scoreli").innerHTML = "Score " + game.score;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            setInterval(mostrar_vidas, 1000);
+            mostrar_vidas();
+            setInterval(mostrar_puntuacion, 1000);
+            mostrar_puntuacion();
+        })
+    </script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then((reg) => {
+                        console.log('Service worker registered.', reg);
+                    });
+            });
+        }
+    </script>
+
+    <script src="install.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+{
+    "name": "Shooter Game",
+    "short_name": "Shooter",
+    "icons": [{
+            "src": "assets/bueno_muerto.png",
+            "sizes": "100x95",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/bueno.png",
+            "sizes": "100x100",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/game_over.png",
+            "sizes": "320x160",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/jefe_muerto.png",
+            "sizes": "100x95",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/jefe.png",
+            "sizes": "100x95",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/malo_muerto.png",
+            "sizes": "320x160",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/malo.png",
+            "sizes": "320x160",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/shot1.png",
+            "sizes": "30x30",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/shot2.png",
+            "sizes": "30x30",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/you_win.png",
+            "sizes": "640x80",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#3eeece",
+    "theme-color": "#ee3ebd"
+}

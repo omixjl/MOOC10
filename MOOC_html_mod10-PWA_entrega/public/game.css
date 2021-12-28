@@ -1,0 +1,79 @@
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem;
+}
+
+.gamebutton {
+  font-size: 1.2rem;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.gamebutton:hover, .gamebutton:focus {
+  border: 1px solid white;
+  background: #da4d93;
+  color: white;
+}
+
+.ui {
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem;
+}
+
+.ui .lifes .livesli,
+.ui .score .livesli {
+  color: #EE3EBD;
+  font-weight: bold;
+}
+
+.ui .lifes .scoreli,
+.ui .score .scoreli {
+  color: #3EEECE;
+  font-weight: bold;
+}
+
+.ui .lifes .icon,
+.ui .score .icon {
+  color: #3EEECE;
+}
+
+.ui .lifes .life,
+.ui .score .life {
+  color: #EE3EBD;
+  -webkit-animation: beats 1s infinite;
+          animation: beats 1s infinite;
+}
+
+@-webkit-keyframes beats {
+  from {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  to {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+}
+
+@keyframes beats {
+  from {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  to {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+}
+/*# sourceMappingURL=game.css.map */
