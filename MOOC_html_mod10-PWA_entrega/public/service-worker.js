@@ -6,7 +6,6 @@ const CACHE_NAME = 'static-cache-v9';
 // CODELAB: Add list of files to cache here.
 const FILES_TO_CACHE = [
     './offline.html',
-    './index.html',
     './assets/bueno_muerto.png',
     './assets/bueno.png',
     './assets/game_over.png',
@@ -27,8 +26,10 @@ const FILES_TO_CACHE = [
     './Opponent.js',
     './Player.js',
     './Shot.js',
+    './game.scss',
     './install.js',
-    './game.scss'
+    './service-worker.js',
+    './index.html'
 ];
 
 self.addEventListener('install', (evt) => {
